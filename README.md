@@ -18,7 +18,7 @@ Installation
 In your root settings.gradle.kts or project build.gradle.kts:
 
 maven {
-    url = uri("https://maven.pkg.github.com/royt2011/rtmc-sdk")
+    url = uri("https://maven.pkg.github.com/royt2011/rtmc-sdk-distribution")
 
     credentials {
         username = project.findProperty("gpr.user") as String?
@@ -51,13 +51,12 @@ In your app-level `build.gradle.kts`:
 
 dependencies {
 
-    implementation("com.royt2011.rtmc:sdk:1.0.0")
-
+implementation("com.royt2011.rtmc.distribution:sdk:1.0.1")
 }
 and in  settings.gradle
    maven {
 
-            url = uri("https://maven.pkg.github.com/royt2011/rtmc-sdk")
+            url = uri("https://maven.pkg.github.com/royt2011/rtmc-sdk-distribution)
 
             credentials {
 
